@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    tools:context=".ADMIN.requestDetails">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settingsAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/light">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settingsSellersForgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/arrowback_ProductDetails"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/light"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar_settingsAddProduct">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="50dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/productImageDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:cropToPadding="false"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/addproductimageicon" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <EditText
+                android:id="@+id/product_name_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageDetailsLayout"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/textviewbackground"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:text="Product Name"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/product_price_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_name_details"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/textviewbackground"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:text="Product Price"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/product_description_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_price_details"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/textviewbackground"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:text="Product Details"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/product_location_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_description_details"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/textviewbackground"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:text="Product Location"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/sellers_phoneNumber_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_location_details"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/textviewbackground"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:text="Phone Number"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/sellers_posted_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sellers_phoneNumber_details"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/textviewbackground"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:text="Date Posted"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/sellers_posted_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sellers_posted_date"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/textviewbackground"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:text="Time Posted"
+                android:textColor="@color/text_color" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sellers_posted_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textviewbackground"
+                android:hint="Listed By"
+                android:textColorHint="@color/text_color"
+                app:boxBackgroundColor="@color/text_background">
+
+                <EditText
+                    android:id="@+id/ListerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_background2"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:editable="false"
+                    android:drawableTint="@color/button_background_green"
+                    android:focusable="false"
+                    android:text="Full Name"
+                    android:textColor="@color/text_color" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputlayout2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/button_background"
+                android:padding="17dp"
+                android:text="Verify"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/dontVerify"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputlayout2"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/button_background"
+                android:padding="17dp"
+                android:text="Delete"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

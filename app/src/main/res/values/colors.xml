@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#23AA49</color>
+    <color name="purple_500">#23AA49</color>
+    <color name="purple_700">#23AA49</color>
+    <color name="teal_200">#23AA49</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lime_green">#1A3848</color>
+    <color name="magma_red">#ec8058 </color>
+    <color name="red">#FF0000</color>
+    <color name="mainBackground">#1A3848</color>
+    <color name="greengreen">#3D550C</color>
+    <color name="grey">#DFDFDE</color>
+    //mine
+    <color name="primary">#0D1F29</color>
+    <color name="background">#D3D3D3</color>
+    <color name="button_background_green">#23AA49</color>
+    <color name="text_background">#FFFFFF</color>
+    <color name="text_color">#FFF</color>
+    <color name="clickable_text">#5D5FEF</color>
+
+    <color name="light">#172C38</color>
+    <color name="dark">#0D1F29</color>
+
+</resources>

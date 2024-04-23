@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/nav_view"
+    tools:openDrawer="start"
+    tools:context=".menu.WHome">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light"
+        android:theme="@style/Theme.KLINAPP">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light"
+            android:layout_marginBottom="6dp">
+
+            <EditText
+                android:id="@+id/homesearchItemsText"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@id/homesearchItemsButton"
+                android:background="@color/light"
+                android:hint="Search Item"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <ImageButton
+                android:id="@+id/homesearchItemsButton"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@color/light"
+                android:src="@drawable/menusearch"
+                app:tint="@color/button_background_green" />
+
+            <TextView
+                android:id="@+id/homesortItemsButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/homesearchItemsText"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/light"
+                android:shadowColor="@color/dark"
+                android:text="Sort By"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                 />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_home_panel" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/FloatingIcon"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Icon"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/curveit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageButton
+                android:id="@+id/homeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/light"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_baseline_home_24"
+                app:tint="@color/button_background_green"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/messageButton"
+                android:layout_width="17dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/light"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/homeButton"
+                app:srcCompat="@drawable/ic_baseline_message_24"
+                app:tint="#899EA9"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/transactionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/light"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/profileButton"
+                app:srcCompat="@drawable/ic_baseline_transactions_24"
+                app:tint="#899EA9"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/profileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/light"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_baseline_person_24"
+                app:tint="#899EA9"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Icon"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/background"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_notifications_24"
+            android:tint="@color/clickable_text"
+            app:layout_anchor="@id/Icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/red"
+            app:strokeWidth="10dp"
+            app:tint="@color/text_background" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/red_notification"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:adjustViewBounds="false"
+            android:background="@color/red"
+            android:baselineAlignBottom="false"
+            android:duplicateParentState="false"
+            android:fadeScrollbars="false"
+            android:focusable="auto"
+            android:focusableInTouchMode="false"
+            android:foregroundGravity="top"
+            android:textAlignment="center"
+            android:tint="@color/red"
+            android:visibility="invisible"
+            app:backgroundTint="@color/red"
+            app:layout_constraintEnd_toEndOf="@+id/fab"
+            app:srcCompat="@drawable/red_notification"
+            app:tint="@color/red"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="1dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

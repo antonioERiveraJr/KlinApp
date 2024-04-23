@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menu.CProfiles">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="651dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="652dp"
+            android:layout_above="@+id/FloatingIcon"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="-15dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/commentsReviews"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/commentsReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text="Comments/Reviews"
+                android:layout_below="@id/inputlayout4"
+                android:textColor="@color/text_color" />
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar_settings"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/light">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_report_24"
+                        android:id="@+id/reportMessage"
+                        android:layout_gravity="center"
+                        app:tint="@color/magma_red" />
+                    <ImageView
+                        android:id="@+id/logActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/log_activity_24" />
+                    <ImageButton
+                        android:id="@+id/logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="30dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_logout"
+                        android:background="@color/light"
+                        app:tint="@color/white" />
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout001"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/app_bar_settings"
+                android:padding="20dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/savedProfileImage"
+                    android:layout_width="111dp"
+                    android:layout_height="84dp"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/fullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/savedProfileImage"
+                    android:layout_alignStart="@+id/savedProfileImage"
+                    android:layout_alignEnd="@+id/savedProfileImage"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="Full Name"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fullName"
+                    android:layout_alignStart="@+id/fullName"
+                    android:layout_alignEnd="@+id/fullName"
+                    android:layout_marginStart="41dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="48dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:numStars="5" />
+
+            </RelativeLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout001"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textviewbackground"
+                android:hint="E-mail"
+                android:textColorHint="@color/text_color"
+                app:boxBackgroundColor="@color/background">
+
+                <EditText
+                    android:id="@+id/profileEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewbackground"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/button_background_green"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:text="Email  Address"
+                    android:textColor="@color/text_color" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputlayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textviewbackground"
+                android:hint="Address"
+                android:textColorHint="@color/text_color"
+                app:boxBackgroundColor="@color/white">
+
+                <EditText
+                    android:id="@+id/profileAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewbackground"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/ic_baseline_house_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/button_background_green"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:text="Address"
+                    android:textColor="@color/text_color" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputlayout3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textviewbackground"
+                android:hint="Contact Number"
+                android:textColorHint="@color/text_color"
+                app:boxBackgroundColor="@color/white">
+
+                <EditText
+                    android:id="@+id/profileContactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewbackground"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/ic_baseline_phonenumber_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/button_background_green"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:text="Contact Number"
+                    android:textColor="@color/text_color" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FloatingIcon"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/curveit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+
+                <ImageButton
+                    android:id="@+id/homeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/light"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_home_24"
+                    app:tint="#717E95"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/messageButton"
+                    android:layout_width="17dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/light"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/homeButton"
+                    app:srcCompat="@drawable/ic_baseline_message_24"
+                    app:tint="#717E95"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/transactionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/light"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/profileButton"
+                    app:srcCompat="@drawable/ic_baseline_transactions_24"
+                    app:tint="#717E95"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/profileButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/light"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_person_24"
+                    app:tint="@color/button_background_green"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Icon"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/background"
+                android:clickable="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_notifications_24"
+                android:tint="@color/clickable_text"
+                app:layout_anchor="@id/Icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/red"
+                app:strokeWidth="10dp"
+                app:tint="@color/text_background" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/red_notification"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:adjustViewBounds="false"
+                android:background="@color/red"
+                android:baselineAlignBottom="false"
+                android:duplicateParentState="false"
+                android:fadeScrollbars="false"
+                android:focusable="auto"
+                android:focusableInTouchMode="false"
+                android:foregroundGravity="top"
+                android:textAlignment="center"
+                android:tint="@color/red"
+                android:visibility="invisible"
+                app:backgroundTint="@color/red"
+                app:layout_constraintEnd_toEndOf="@+id/fab"
+                app:srcCompat="@drawable/red_notification"
+                app:tint="@color/red"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="1dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

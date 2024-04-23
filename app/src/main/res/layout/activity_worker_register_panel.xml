@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    tools:context=".workerRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/worker_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="REGISTER"
+
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/worker_picture"
+            android:layout_width="200dp"
+            android:clickable="true"
+            android:onClick="openFileDialog"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/addproductimageicon" />
+
+
+
+        <EditText
+            android:id="@+id/worker_full_name"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/textviewbackground"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/button_background_green"
+            android:hint="Name"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="17sp"  />
+        <EditText
+            android:id="@+id/worker_email"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textviewbackground"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/button_background_green"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="17sp"  />
+
+        <EditText
+            android:id="@+id/worker_number"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textviewbackground"
+            android:drawableLeft="@drawable/ic_baseline_phonenumber_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/button_background_green"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="20dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/worker_address"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_house_24"
+            android:drawablePadding="10dp"
+            android:background="@drawable/textviewbackground"
+            android:padding="20dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:drawableTint="@color/button_background_green"
+            android:textSize="17sp"
+            android:hint="Address"
+            android:inputType="textPersonName" />
+
+
+
+
+        <EditText
+            android:id="@+id/worker_password"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textviewbackground"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableTint="@color/button_background_green"
+            android:padding="20dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="17sp"  />
+
+        <EditText
+            android:id="@+id/worker_confirm_password"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textviewbackground"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:drawablePadding="10dp"
+            android:hint="confirm password"
+            android:drawableTint="@color/button_background_green"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="17sp"  />
+
+        <EditText
+
+
+            android:id="@+id/worker_birthday"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textviewbackground"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:drawableTint="@color/button_background_green"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+            android:padding="20dp"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/text_color"
+            android:focusableInTouchMode="false"
+            android:hint="birth date"/>
+
+
+
+        <TextView
+            android:id="@+id/txtid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IDENTIFICATION"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/worker_id"
+            android:layout_width="400dp"
+            android:layout_margin="30dp"
+            android:clickable="true"
+            android:onClick="openFileDialog2"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/addproductimageicon"
+            />
+        <TextView
+            android:id="@+id/txtsss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SSS"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/worker_sss"
+            android:layout_width="400dp"
+            android:layout_margin="30dp"
+            android:layout_height="200dp"
+            android:clickable="true"
+            android:onClick="openFileDialog3"
+            android:layout_gravity="center"
+            android:src="@drawable/addproductimageicon"
+            />
+        <TextView
+            android:id="@+id/txtnbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NBI CLEARANCE"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/worker_nbi"
+            android:layout_width="400dp"
+            android:layout_margin="30dp"
+            android:layout_height="200dp"
+
+            android:clickable="true"
+            android:onClick="openFileDialog4"
+            android:layout_gravity="center"
+            android:src="@drawable/addproductimageicon"
+            />
+
+
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            android:text="Sign Up" />
+
+        <TextView
+            android:id="@+id/rgt_logininstead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            android:text="Already have an account."
+            android:textColor="@color/clickable_text"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+

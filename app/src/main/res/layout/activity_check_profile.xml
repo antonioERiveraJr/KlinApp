@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    tools:context=".checkProfile">
+
+
+    <Button
+        android:id="@+id/chooseWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hire"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        android:layout_alignParentBottom="true"/>
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_settings"
+                android:layout_width="match_parent"
+                android:background="#172C38"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/Arrowback"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                    android:background="#172C38"
+                    app:tint="@color/white" />
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout001"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/app_bar_settings"
+            android:padding="20dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/savedProfileImage"
+                android:layout_width="111dp"
+                android:layout_height="84dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/savedProfileImage"
+                android:layout_alignStart="@+id/savedProfileImage"
+                android:layout_alignEnd="@+id/savedProfileImage"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="Full Name"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fullName"
+                android:layout_alignStart="@+id/fullName"
+                android:layout_alignEnd="@+id/fullName"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="48dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/commentsReviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputlayout4"
+            android:layout_centerInParent="true"
+            android:text="Comments/Reviews"
+            android:textColor="#FFFFFF" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputlayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativelayout001"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="E-mail"
+            android:textColorHint="#FFFFFF" >
+
+            <EditText
+                android:id="@+id/profileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background2"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/button_background_green"
+
+                android:editable="false"
+                android:focusable="false"
+                android:text="Email  Address"
+                android:textColor="#FFFFFF" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputlayout3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Address"
+            android:textColorHint="#FFFFFF" >
+
+            <EditText
+                android:id="@+id/profileAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background2"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_baseline_house_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/button_background_green"
+                android:editable="false"
+                android:focusable="false"
+                android:text="Address"
+                android:textColor="#FFFFFF" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputlayout4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputlayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Contact Number"
+            android:textColorHint="#FFFFFF" >
+
+            <EditText
+                android:id="@+id/profileContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background2"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_baseline_phonenumber_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/button_background_green"
+                android:editable="false"
+                android:focusable="false"
+                android:text="Contact Number"
+                android:textColor="#FFFFFF" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/commentsReviews"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

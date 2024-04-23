@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    tools:context=".WorkerLogIn">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo3" />
+
+    <Button
+    android:id="@+id/clientButtons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/curveit"
+    android:text="CLIENT"
+    android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:text="Login as Worker"
+        android:textColor="@color/text_color"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/inputlayout01"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:hint="E-mail Address"
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="clear_text"
+        android:textColorHint="@color/text_color"
+        app:boxStrokeColor="@color/white"
+        android:background="@drawable/textviewbackground"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:boxBackgroundColor="@android:color/transparent"
+        android:layout_below="@id/textView2">
+
+        <EditText
+            android:id="@+id/input_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textviewbackground"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_color"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--<EditText
+        android:id="@+id/input_username"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_background"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="E-mail Address"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/inputlayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        app:boxStrokeWidth="2dp"
+        android:textColorHint="@color/text_color"
+        app:startIconDrawable="@drawable/ic_baseline_securitypassword_24"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:passwordToggleEnabled="true"
+        android:background="@drawable/textviewbackground"
+        android:layout_below="@id/inputlayout01">
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textviewbackground"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<EditText
+        android:id="@+id/input_password"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/input_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp" />-->
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/inputlayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="105dp"
+        android:background="@drawable/button_background"
+        android:text="LOGIN" />
+
+
+    <TextView
+        android:id="@+id/CreateAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Create an account"
+        android:textColor="@color/clickable_text"
+        android:textSize="15dp"  />
+
+
+</RelativeLayout>

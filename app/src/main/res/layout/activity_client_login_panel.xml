@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    tools:context=".ClientLogin">
+
+    <!--gravity of the Switch-->
+
+
+    <Button
+        android:id="@+id/workerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/curveit"
+        android:text="WORKER"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/lgnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="Login"
+        android:textColor="@color/text_background"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/sellerLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email Address"
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="clear_text"
+        android:textColorHint="#FFF"
+        app:hintTextColor="@color/button_background_green"
+        app:boxStrokeColor="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        android:background="@drawable/textviewbackground"
+        app:boxBackgroundColor="@android:color/transparent"
+        android:layout_below="@id/lgnTextView">
+
+        <EditText
+            android:id="@+id/seller_email"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:background="@drawable/textviewbackground"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/sellerpasslayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:textColorHint="#FFF"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/button_background_green"
+        app:boxStrokeColor="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_securitypassword_24"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:passwordToggleEnabled="true"
+        android:background="@drawable/textviewbackground"
+        android:layout_below="@id/sellerLayout">
+
+        <EditText
+            android:id="@+id/seller_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textviewbackground"
+            android:inputType="textPassword"
+            android:textColor="#FFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<EditText
+        android:id="@+id/input_password"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/input_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp" /
+
+    <TextView
+        android:id="@+id/sellerforgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sellerpasslayout"
+        android:layout_alignEnd="@id/sellerpasslayout"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Forgot Password?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/switchUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sellerloginButton"
+        android:layout_alignStart="@id/sellerpasslayout"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Switch to Workers"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />-->
+
+
+    <Button
+        android:id="@+id/sellerloginButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/sellerpasslayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="99dp"
+        android:background="@drawable/button_background"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/sellerCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sellerloginButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="71dp"
+        android:gravity="center"
+        android:text="Create an account"
+        android:textColor="@color/clickable_text"
+        android:textSize="15sp"  />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo3" />
+
+
+</RelativeLayout>

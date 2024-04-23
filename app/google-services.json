@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "53330611660",
+    "project_id": "klinapp-d8a40",
+    "storage_bucket": "klinapp-d8a40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53330611660:android:0ecfde479ce41d78426169",
+        "android_client_info": {
+          "package_name": "com.example.cleaningapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53330611660-lqs1m850i439j8ldlve43nlipah80b3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGpY3_xc5rGtIPN9GTDXLNWcOHoTxZMcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53330611660-lqs1m850i439j8ldlve43nlipah80b3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

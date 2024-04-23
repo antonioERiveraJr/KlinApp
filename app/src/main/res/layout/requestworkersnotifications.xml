@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:background="@color/light"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="381dp"
+        android:layout_height="match_parent"
+        android:background="@color/light">
+
+        <TextView
+            android:id="@+id/request_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/light"
+            android:text="Product Name"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/client"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/request_name_layout"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/light"
+            android:text="Client: "
+            android:textColor="@color/text_color"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/product_worker"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/client"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/client"
+            android:text="Worker:"
+            android:textColor="@color/text_color"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/request_worker_txt"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/product_worker"
+            android:layout_marginStart="-133dp"
+            android:layout_marginLeft="-133dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/product_worker"
+            android:layout_toRightOf="@+id/client"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/request_client_txt"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/client"
+            android:layout_marginStart="-142dp"
+            android:layout_marginLeft="-142dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/client"
+            android:layout_toRightOf="@+id/client"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/product_worker2"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_worker"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="-198dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/client"
+            android:text="Date Issued:"
+            android:textColor="@color/text_color"
+            android:textSize="18dp"  />
+
+        <TextView
+            android:id="@+id/request_posted_date"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/product_worker2"
+            android:layout_marginStart="-93dp"
+            android:layout_marginLeft="-92dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/product_worker2"
+            android:layout_toRightOf="@+id/client"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

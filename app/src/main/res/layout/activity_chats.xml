@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    tools:context=".ChatsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_chats"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/backgrounddesign2">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#172C38"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            app:tint="#FFFFFF" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_activity_chats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<ImageButton
+                android:id="@+id/arrowback_chats"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@color/lime_green"
+                android:src="@drawable/ic_arrow_back"
+                tools:ignore="SpeakableTextPresentCheck" />-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_chats_activity"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/name_chats_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Lastname, Firstname"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_text_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light"
+        android:layout_above="@+id/write_message"
+        android:layout_below="@id/app_bar_chats" />
+
+    <RelativeLayout
+        android:id="@+id/write_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/light"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_send"
+            android:background="@drawable/input_background2"
+            android:hint="Type a message..."
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_send_button"
+            android:id="@+id/btn_send"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:tint="@color/lime_green" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

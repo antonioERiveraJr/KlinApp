@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    android:layout_height="match_parent"
+    tools:context=".CRequest">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settingsAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/light">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settingsSellersForgot"
+            android:layout_width="match_parent"
+            android:background="@color/light"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/light"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/arrowback_SellersAddNewProduct"
+                    android:text="Upload Request"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="23dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/arrowback_SellersAddNewProduct"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@color/light"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar_settingsAddProduct">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="50dp"
+                app:cardCornerRadius="20dp"
+                android:background="@drawable/input_background2"
+                android:layout_alignParentEnd="true" >
+
+                <ImageView
+                    android:id="@+id/select_product_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/input_background2"
+                    android:cropToPadding="false"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/addproductimageicon" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/categoryInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageLayout"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/input_background2"
+                android:hint="Please Select Category"
+                android:textColorHint="@color/text_color">
+
+                <AutoCompleteTextView
+                    android:id="@+id/itemCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_background2"
+                    android:clickable="false"
+                    android:drawablePadding="10dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="@color/text_color" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoryInputLayout"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/input_background2"
+                android:hint="Enter Request Name"
+                android:textColorHint="@color/text_color"
+                android:inputType="textMultiLine"
+                android:textColor="@color/text_color"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_name"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/input_background2"
+                android:hint="Enter Request Details"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color"
+                android:inputType="textMultiLine"
+                android:padding="20dp" />
+
+
+            <EditText
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_description"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/text_color"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/input_background2"
+                android:hint="Enter Request Price"
+                android:textColorHint="@color/text_color"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="20dp" >
+
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/product_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_price"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/input_background2"
+                android:hint="# of house,Purok, Barangay"
+                android:inputType="textMultiLine"
+                android:textSize="15dp"
+                android:padding="20dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color" />
+
+            <EditText
+                android:id="@+id/request_date_tobedone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_location"
+                android:layout_marginLeft="45dp"
+                android:clickable="false"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/input_background2"
+                android:hint="Working day"
+                android:padding="20dp"
+                android:maxLength="20"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/request_date_tobedone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/text_background"
+                android:layout_marginBottom="20dp"
+                android:text="Lister's Information"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout2"
+                android:layout_below="@id/textView"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="@color/text_color"
+                android:hint="Listers Phone Number:">
+
+                <EditText
+                    android:id="@+id/sellers_phoneNumber"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_phonenumber_24"
+                    android:background="@drawable/input_background2"
+                    android:drawablePadding="10dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/text_color" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout"
+                android:layout_below="@id/inputlayout2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                app:boxBackgroundColor="@color/white"
+                android:textColorHint="@color/text_color"
+                android:hint="Listed By:">
+
+                <EditText
+                    android:id="@+id/add_shop_name"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:background="@drawable/input_background2"
+                    android:drawablePadding="10dp"
+                    android:text="Requester Name"
+                    android:textColor="@color/text_color" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/add_new_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputlayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="20dp"
+                android:padding="17dp"
+                android:background="@drawable/button_background"
+                android:text="Add"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

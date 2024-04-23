@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddesign2"
+    tools:context=".clientRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/client_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/client_picture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:onClick="openFileDialog"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/addproductimageicon" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputlayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changeShopImageBTN"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="#FFF"
+            android:hint="Full name"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/white">
+
+        <EditText
+            android:id="@+id/client_full_name"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/textviewbackground"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/button_background_green"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:textColor="#FFF"
+            android:textColorHint="@color/text_color"
+            android:textSize="15sp"  />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changeShopImageBTN"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="#FFF"
+            android:hint="Email"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/white">
+        <EditText
+            android:id="@+id/client_email"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textviewbackground"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/button_background_green"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColor="#FFF"
+            android:textColorHint="@color/text_color"
+            android:textSize="15sp"  />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changeShopImageBTN"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="#FFF"
+            android:hint="Phone Number"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/white">
+        <EditText
+            android:id="@+id/client_number"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textviewbackground"
+            android:drawableLeft="@drawable/ic_baseline_phonenumber_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/button_background_green"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="20dp"
+            android:textColor="#FFF"
+            android:textColorHint="@color/text_color"
+            android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changeShopImageBTN"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="#FFF"
+            android:hint="Address"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/white">
+        <EditText
+            android:id="@+id/client_address"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_baseline_house_24"
+            android:drawablePadding="10dp"
+            android:background="@drawable/textviewbackground"
+            android:padding="20dp"
+            android:textColor="#FFF"
+            android:textColorHint="@color/text_color"
+            android:drawableTint="@color/button_background_green"
+            android:textSize="15sp"
+            android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changeShopImageBTN"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="#FFF"
+            android:hint="Password"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/white">
+
+        <EditText
+            android:id="@+id/client_password"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textviewbackground"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:drawableTint="@color/button_background_green"
+            android:padding="20dp"
+            android:textColor="#FFF"
+            android:textColorHint="@color/text_color"
+            android:textSize="15sp"  />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changeShopImageBTN"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="#FFF"
+            android:hint="confirm password"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/white">
+        <EditText
+            android:id="@+id/client_confirm_password"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textviewbackground"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/button_background_green"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="#FFF"
+            android:textColorHint="@color/text_color"
+            android:textSize="15sp"  />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changeShopImageBTN"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="#FFF"
+            android:hint="birth date"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/white">
+        <EditText
+
+
+            android:id="@+id/client_birthday"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textviewbackground"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:drawableTint="@color/button_background_green"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+            android:padding="20dp"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/black"
+            android:focusableInTouchMode="false"
+            android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="IDENTIFICATION"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/client_id"
+            android:layout_width="match_parent"
+            android:layout_margin="50dp"
+            android:onClick="openFileDialog2"
+            android:clickable="true"
+            android:layout_height="200dp"
+            android:background="@drawable/textviewbackground"
+            android:layout_gravity="center"
+            android:src="@drawable/addproductimageicon"
+            />
+
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="Sign Up" />
+
+        <TextView
+            android:id="@+id/rgt_logininstead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            android:text="Already have an account."
+            android:textColor="@color/clickable_text"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+

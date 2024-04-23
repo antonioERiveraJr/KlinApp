@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/popupbg"
+        android:backgroundTint="@color/light"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp" >
+
+            <TextView
+                android:id="@+id/trasactiontxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text_color"
+                android:layout_alignParentTop="true"
+                android:textSize="20dp"
+                android:text="TRANSACTION"/>
+            <TextView
+                android:id="@+id/txtbefore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BEFORE"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="70dp"
+                android:layout_below="@+id/trasactiontxt"
+                android:layout_alignParentLeft="true"
+                android:textSize="12dp"/>
+            <TextView
+                android:id="@+id/txtafter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AFTER"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginEnd="70dp"
+                android:layout_below="@+id/trasactiontxt"
+                android:layout_alignParentRight="true"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/before"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/txtbefore"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/addproductimageicon" />
+
+            <ImageView
+                android:id="@+id/after"
+                android:layout_width="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtafter"
+                android:layout_height="150dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/addproductimageicon" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:text="Price"
+                android:textColor="@color/text_color"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/before"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/Gotit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/btnbg"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="Got it"
+                android:textColor="@color/text_color" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
